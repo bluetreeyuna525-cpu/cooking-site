@@ -1,53 +1,25 @@
 $(document).ready(function(){
     $(function(){
 
-        $('.selectbutton').hover(function(){
+    $('.selectbutton').hover(function(){
         $(this).toggleClass('selecterChange');
-        });
-        $('.selectimg').click(function(){
-        $(this).closest('.selecter').find('.selectimg').removeClass('selecterClick');
-        $(this).addClass('selecterClick');
-        });
-        $('#all').click(function(){
-        $('.selecter').find('.selectimg').removeClass('selecterClick');
-            
-        });
+    });
 
+    $('#all').click(function(){
+        $('.selectimg').removeClass('selecterClick');
+        $('.content').stop(true, true).fadeIn(500);
+    });
 
-        $('.content').show();//default show 
+    $('.selectbutton').click(function(){
+        const category = this.id;
 
-        $('#all').click(function(){
-            $('.vege, .fish, .pasta, .rice, .sandwich, .bento, .meat').fadeIn(500);
-        });
-        
-        $('#meat').click(function(){
-            $('.vege, .fish, .pasta, .rice, .sandwich, .bento, .meat').fadeOut(500);
-            $('.meat').fadeIn(500);    
-        });
-        $('#fish').click(function(){
-            $('.vege, .fish, .pasta, .rice, .sandwich, .bento, .meat').fadeOut(500);
-            $('.fish').fadeIn(500);   
-        });
-        $('#vege').click(function(){
-            $('.vege, .fish, .pasta, .rice, .sandwich, .bento, .meat').fadeOut(500);
-            $('.vege').fadeIn(500);        
-        });
-        $('#pasta').click(function(){
-            $('.vege, .fish, .pasta, .rice, .sandwich, .bento, .meat').fadeOut(500);
-            $('.pasta').fadeIn(500);        
-        });
-        $('#rice').click(function(){
-            $('.vege, .fish, .pasta, .rice, .sandwich, .bento, .meat').fadeOut(500);
-            $('.rice').fadeIn(500);        
-        });
-        $('#sandwich').click(function(){
-            $('.vege, .fish, .pasta, .rice, .sandwich, .bento, .meat').fadeOut(500);
-            $('.sandwich').fadeIn(500);        
-        });
-        $('#bento').click(function(){
-            $('.vege, .fish, .pasta, .rice, .sandwich, .bento, .meat').fadeOut(500);
-            $('.bento').fadeIn(500);        
-        });
+        $('.selectimg').removeClass('selecterClick');
+        $(this).find('.selectimg').addClass('selecterClick');
 
-    })
+        $('.content').stop(true, true).hide();
+        $('.content.' + category).stop(true, true).fadeIn(500);
+    });
+
+});
+
 })
