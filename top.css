@@ -1,0 +1,424 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Kameron:wght@400..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    width: 100%;
+    height: 95px;
+    background-color: #f5f4f4;
+    color: #4a4a4a;
+    display: flex;
+    align-items: center;
+}
+nav p{
+    font-family: 'Raleway', serif;
+    font-size: 36px;
+    font-weight: 700;
+    flex: 3;
+    margin-left: 60px;
+}
+.nav-links{
+    list-style: none;
+    flex: 7;
+    text-align: right;
+    margin-right: 40px;
+}
+.nav-links li{
+    display: inline;    
+}
+
+.nav-links li a{
+    font-family: 'Crimson Text', serif;
+    font-size: 20px;
+    text-decoration: none;
+    color: #4a4a4a;
+    margin: 20px;
+}
+.nav-links li a:hover{
+    text-shadow:  0px 4px 4px rgba(0, 0, 0, 0.3);
+}
+.nav-links li a:active{
+    color: #a1a1a1;
+}
+
+/* Section Banner */
+.section-1{
+    width: 100%;
+    height: 730px;
+    background: url(bg-top.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+
+    opacity: 0;
+    transition: opacity 1s ease-out;
+}
+.section-1 div{
+    width: 500px;
+    position: relative;
+    top: 290px;
+    left: 480px;
+    text-align: center;
+    font-family: 'Kameron', serif;
+    font-size: 24px;
+}
+/* About */
+.section-2{
+    width: 70%;
+    height: 500px;
+    margin: 80px auto;
+    text-align: center;
+    justify-content: space-around;
+    color: #4a4a4a;
+}
+.title{
+    font-family: 'Raleway', serif;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 10px;
+}
+.subtitle{
+    font-family: 'Crimson Text', serif;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 40px;
+}
+.about-content{
+    display: flex;
+}
+.about-img img{
+    width: 227px;
+    height: 227px;
+}
+.about-img{
+    flex: 3;
+    opacity: 0.8;
+}
+.about-p{
+    flex: 7;
+    margin-left: 40px;
+    text-align: left;
+    line-height: 1.8;
+}
+.about-p p{
+    margin: 8px;
+}
+.about-p span{
+    font-family: 'Raleway', serif;
+    font-weight: 600;
+
+}
+/* Additional */
+/* container */
+.slider-wrapper{
+    position: relative;
+    width: 600px;
+    margin: 20px auto;
+}
+#slider{
+    width: 500px;
+    height: 300px;
+    overflow: hidden;
+    margin: 0 auto;
+    border-radius: 4px;
+}
+#slider ul{
+    display: flex;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 300px;
+    list-style: 0;
+    width: 1500px;
+    transition: transform 0.5s ease-in-out;
+}
+/* items */
+#slider ul li{
+    position: relative;
+    display: block;
+    float: left;
+    flex-shrink: 0;
+    margin: 0;
+    padding: 0;
+    /* size item */
+    width: 500px;
+    height: 300px;
+
+}
+
+.xmas p:nth-child(1){
+    margin-top: 125px;
+    text-align: center;
+    font-size: 36px;
+    font-family: 'Raleway', serif;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+.xmas p:nth-child(2){
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Raleway', serif;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+}
+.jp p:nth-child(1){
+    margin-top: 125px;
+    text-align: center;
+    font-size: 36px;
+    font-family: 'Raleway', serif;
+    font-weight: bold;
+    color: #ded8d8;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+.jp p:nth-child(2){
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Raleway', serif;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+}
+.sp p:nth-child(1){
+    margin-top: 125px;
+    text-align: center;
+    font-size: 36px;
+    font-family: 'Raleway', serif;
+    font-weight: bold;
+    color: #000000;
+    text-shadow: 2px 2px 4px rgb(255, 255, 255);
+}
+.sp p:nth-child(2){
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Raleway', serif;
+    color: #ffffff;
+    text-shadow: 
+    0 0 5px rgba(0,0,0,0.8),
+    0 0 15px rgba(0,0,0,0.8);
+}
+
+.learn{
+    font-family: 'Crimson Text', serif;
+    font-weight: bold;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #969876;
+    border: none;
+    width: 125px;
+    height: 30px;
+    position: relative;
+    top: 10px;
+    left: 180px;
+}
+.learn:hover{
+    background-color: #525252;
+    cursor: pointer;
+}
+.learn:active{
+    color: #525252;
+}
+
+/* ARROW Controls */
+a.control-next,
+a.control-prev{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: #2a2a2a;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 20px;
+    opacity: 0.6;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+a.control-next:hover ,
+a.control-prev:hover{
+    opacity: 0.8;
+    -webkit-transition: all 0.2s ease;
+}
+
+a.control-next{
+    right: 0;
+}
+
+a.control-prev{
+    left: 0;
+}
+
+
+/* Recipe Gallery */
+.section-3{
+    width: 90%;
+    margin: 200px auto;
+    text-align: center;
+}
+.gallery{
+    display: grid;
+    margin: 50px 30px;
+    height: 600px;
+    width: 83%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr ;
+}
+.box{
+    position: relative;
+    width: 300px;
+    height: 300px;
+}
+.box img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    transition: 0.3s;
+}
+.overlay-text{
+    font-family: 'Crimson Text', serif;
+    font-size: 24px;
+    font-weight: bold;
+    position: absolute; /* 親要素を基準に配置 */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* 半透明の黒背景で文字を見やすく */
+    color: white;
+    display: flex;      /* 文字を上下左右中央揃えにする */
+    justify-content: center;
+    align-items: center;
+    opacity: 0;         /* 最初は隠す */
+    transition: opacity 0.3s ease; /* ふわっと表示させるアニメーション */
+}
+.box:hover .overlay-text{
+    opacity: 1;
+}
+.viewmore{
+    font-family: 'Crimson Text', serif;
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f4f4;       
+}
+.viewmore a{
+    text-decoration: none;
+    color: inherit;
+}
+.viewmore:hover{
+    color: #ffffff;
+    background-color: #a1a1a1;
+}
+
+.viewmore:hover,
+.box:hover{
+    cursor: pointer;
+}
+
+
+/* Subscribe */
+.section-4{
+    width: 100%;
+    height: 386px;
+    background: url(egg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+    margin-top: 100px;
+}
+.subscribe{
+    width: 40%;
+    position: relative;
+    top: 50px;
+    left: 150px;
+    color: #4a4a4a;
+    font-family: 'Raleway', serif;
+}
+.subscribe h2{
+    font-size: 36px;
+    padding: 15px 0px;
+}
+.subscribe p{
+    font-size: 16px;
+    width: 90%;
+    padding: 1%;
+    line-height: 1.2;
+}
+.subscribe button{
+    width: 150px;
+    height: 44px;
+    margin-top: 20px;
+    background-color: #5C8DA6;
+    color: #ffffff;
+    font-family: 'Raleway', serif;
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+}
+.subscribe button:hover{
+    cursor: pointer;
+}
+.subscribe button:active{
+    color: #375463;
+}
+
+footer{
+    display: flex;
+    height: 150px;
+    width: 100%;
+    background-color: #CFCBC0;
+    padding: 30px 60px ;
+    color: #4a4a4a;
+}
+#left{
+    font-family: 'Raleway', serif;
+    flex-grow: 3;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+}
+#left p:nth-child(1){
+    font-size: 36px;
+    font-weight: bold;
+}
+#left p:nth-child(2){
+    font-size: 16px;
+}
+#right{
+    flex-grow: 7;
+    font-family: 'Raleway', serif;
+    font-weight: bold;
+    font-size: 24px;
+    display: flex;
+}
+
+#right img{
+    width: 47px;
+    height: 47px;
+    opacity: 0.8;
+    margin: 10px;
+}
+.text{
+    margin: auto 10px auto 750px;
+}
+.logo{
+    display: flex;
+    margin: auto 0px;
+}
+.logolink{
+    border: none;
+}
+.logo a img:hover{
+    opacity: 0.5;
+}

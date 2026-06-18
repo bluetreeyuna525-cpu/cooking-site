@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Kameron:wght@400..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    width: 100%;
+    height: 95px;
+    background-color: #f5f4f4;
+    color: #4a4a4a;
+    display: flex;
+    align-items: center;
+}
+nav p{
+    font-family: 'Raleway', serif;
+    font-size: 36px;
+    font-weight: 700;
+    flex: 3;
+    margin-left: 60px;
+}
+.nav-links{
+    list-style: none;
+    flex: 7;
+    text-align: right;
+    margin-right: 40px;
+}
+.nav-links li{
+    display: inline;    
+}
+
+.nav-links li a{
+    font-family: 'Crimson Text', serif;
+    font-size: 20px;
+    text-decoration: none;
+    color: #4a4a4a;
+    margin: 20px;
+}
+.nav-links li a:hover{
+    text-shadow:  0px 4px 4px rgba(0, 0, 0, 0.3);
+}
+.nav-links li a:active{
+    color: #a1a1a1;
+}
+/* recipe galllery */
+.section-1{
+    width: 100%;
+    text-align: center;
+}
+.section-1 h2{
+    font-family: 'Crimson Text', serif;
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: 50px;
+}
+.section-1 div p{
+    font-family: 'Raleway', serif;
+    margin-bottom: 50px;
+}
+.selecter{
+    width: 58%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.selecter img{
+    width: 74px;
+    height: 74px;
+}
+.selecter:hover,
+#all:hover{
+    cursor: pointer;
+}
+.selecterChange{
+    filter: brightness(0.8);
+}
+.selecterClick{
+    border: 2px solid #525252 ;
+    border-radius: 50%;
+}
+
+
+/* recipes */
+.section-2{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 95%;
+    margin: 50px auto;
+    
+}
+.content{
+    text-align: center;
+}
+.content img{
+    width: 200px; 
+    height: 200px; 
+    object-fit: cover;
+}
+.content h1{
+    font-family: 'Raleway', serif;
+    font-size: 24px;
+}
+.content p{
+    font-family: 'Raleway', serif;
+    font-size: 12px;
+    width: 85%;
+    margin: 3px auto;
+}
+.content button{
+    font-family: 'Crimson Text', serif;
+    font-weight: bold;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #969876;
+    padding: 4px auto;
+    border: none;
+    margin: 10px auto 120px auto;
+    width: 125px;
+    height: 30px;
+}
+.content button:hover{
+    background-color: #525252;
+    cursor: pointer;
+}
+.content button:active{
+    color: #525252;
+}
+
+
+
+footer{
+    display: flex;
+    height: 150px;
+    width: 100%;
+    background-color: #CFCBC0;
+    padding: 30px 60px ;
+    color: #4a4a4a;
+}
+#left{
+    font-family: 'Raleway', serif;
+    flex-grow: 3;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+}
+#left p:nth-child(1){
+    font-size: 36px;
+    font-weight: bold;
+}
+#left p:nth-child(2){
+    font-size: 16px;
+}
+#right{
+    flex-grow: 7;
+    font-family: 'Raleway', serif;
+    font-weight: bold;
+    font-size: 24px;
+    display: flex;
+}
+
+#right img{
+    width: 47px;
+    height: 47px;
+    opacity: 0.8;
+    margin: 10px;
+}
+.text{
+    margin: auto 10px auto 750px;
+}
+.logo{
+    display: flex;
+    margin: auto 0px;
+}
+.logolink{
+    border: none;
+}
+.logo a img:hover{
+    opacity: 0.5;
+}
